@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: mysign-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: xzero
+Implementation-Vendor-Id: cn.lcxian
+Build-Jdk: 1.8.0_172
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/mysign/mysign-service
+Created-By: Maven Integration for Eclipse
+
