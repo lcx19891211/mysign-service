@@ -11,4 +11,4 @@ mybatis-plus:  type-aliases-package: cn.lcxian.pojo
 server:
   port: 80
   servlet:
-    context-path: /  #运行库      ---spring:  profiles: running  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: com.mysql.jdbc.Driver    url: jdbc:mysql://localhost:3306/CLOUDRIS?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true    username: root    password: root    #测试库---spring:  profiles: test  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: org.sqlite.JDBC    url: jdbc:sqlite:D:\\CLOUDRIS.db    
+    context-path: /Consult/Rest/#运行库      ---spring:  profiles: running  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: oracle.jdbc.OracleDriver    url: jdbc:oracle:thin:@localhost:1521:orcl    username: test    password: test    #测试库---spring:  profiles: test  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: org.sqlite.JDBC    url: jdbc:sqlite:D:\\CLOUDRIS.db    
