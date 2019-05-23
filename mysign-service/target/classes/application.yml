@@ -5,10 +5,10 @@ spring:  application:    name: service#视图映射      mvc:
     proxy-target-class: true
 #mybatis-plus配置
 mybatis-plus:  type-aliases-package: cn.lcxian.pojo
-  mapper-locations: classpath:/mapper/*.xml
+  mapper-locations: classpath:/mapper/*.xml#不适用驼峰映射
   configuration:
-    map-underscore-to-camel-case: true      logging:  level:     cn.lcxian.dao: debug#端口配置        
+    map-underscore-to-camel-case: false      logging:  level:     cn.lcxian.dao: debug#端口配置        
 server:
   port: 80
   servlet:
-    context-path: /  #运行库      ---spring:  profiles: running  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: com.mysql.jdbc.Driver    url: jdbc:mysql://localhost:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true    username: root    password: root    #测试库---spring:  profiles: test  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: org.sqlite.JDBC    url: jdbc:sqlite:D:\\VS_Project\\Projects\\XYJHZX_MVC\\XYJHZX_MVC\\bin\\Lib\\Res\\DB_XYJHZX.db    
+    context-path: /  #运行库      ---spring:  profiles: running  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: com.mysql.jdbc.Driver    url: jdbc:mysql://localhost:3306/CLOUDRIS?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true    username: root    password: root    #测试库---spring:  profiles: test  datasource:        #引入druid数据源    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: org.sqlite.JDBC    url: jdbc:sqlite:D:\\CLOUDRIS.db    
